@@ -33,12 +33,12 @@ export default function HomePage() {
   return (
     <div
       dir="ltr"
-      className="min-h-screen flex flex-col justify-between bg-[#F5F3EE] text-[#3D4740] relative"
+      className="min-h-screen md:h-screen md:overflow-hidden flex flex-col justify-between bg-[#F5F3EE] text-[#3D4740] relative"
     >
       <Navbar locale={locale} onLocaleChange={setLocale} />
 
       {/* Main Magazine Studio Stage */}
-      <main className="flex-1 w-full max-w-[1320px] mx-auto px-3 sm:px-6 md:px-8 flex items-center justify-center relative py-3 md:py-2">
+      <main className="flex-1 md:min-h-0 w-full max-w-[1320px] mx-auto px-3 sm:px-6 md:px-8 flex items-center justify-center relative py-3 md:py-2">
         {/* Left Dismissible Instruction Card (matching reference screenshot) */}
         {showHint && isAtStart && (
           <aside className="hidden xl:block absolute left-6 top-1/2 -translate-y-1/2 z-30 w-64 p-4 rounded-xl bg-white/90 backdrop-blur-md border border-[#DCE3DD] shadow-[0_12px_32px_rgba(28,41,33,0.08)]">
